@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.RechargeActivity">
+
+    <include
+        android:id="@+id/recharge_titlecontainer"
+        layout="@layout/title" />
+
+    <LinearLayout
+        android:id="@+id/recharge_container1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recharge_titlecontainer"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:background="@android:color/transparent">
+
+            <ImageView
+                android:id="@+id/recharge_scan"
+                android:layout_width="@dimen/dimen_23"
+                android:layout_height="@dimen/dimen_23"
+                android:layout_centerVertical="true"
+                android:scaleType="center"
+                android:src="@drawable/recharge_scan" />
+
+            <Button
+                android:id="@+id/recharge_search"
+                android:layout_width="@dimen/dimen_79"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/exchange_later"
+                android:text="@string/recharge_search"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_15" />
+
+            <EditText
+                android:id="@+id/recharge_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_toEndOf="@id/recharge_scan"
+                android:layout_toLeftOf="@id/recharge_search"
+                android:layout_toRightOf="@id/recharge_scan"
+                android:layout_toStartOf="@id/recharge_search"
+                android:background="@drawable/bg_edittext_recharge"
+                android:maxLines="1"
+                android:paddingEnd="@dimen/dimen_10"
+                android:paddingLeft="@dimen/dimen_10"
+                android:paddingRight="@dimen/dimen_10"
+                android:paddingStart="@dimen/dimen_10"
+                android:textSize="@dimen/font_15" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dimen_7"
+            android:paddingEnd="@dimen/dimen_19"
+            android:paddingLeft="@dimen/dimen_19"
+            android:paddingRight="@dimen/dimen_19"
+            android:paddingStart="@dimen/dimen_19"
+            android:paddingTop="@dimen/dimen_12">
+
+            <TextView
+                android:id="@+id/recharge_number1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/recharge_name"
+                android:textColor="#999999"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/recharge_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:text="@string/number_sample_1"
+                android:textColor="#222222"
+                android:textSize="@dimen/font_15" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dimen_7"
+            android:paddingEnd="@dimen/dimen_19"
+            android:paddingLeft="@dimen/dimen_19"
+            android:paddingRight="@dimen/dimen_19"
+            android:paddingStart="@dimen/dimen_19"
+            android:paddingTop="@dimen/dimen_12">
+
+            <TextView
+                android:id="@+id/recharge_mem_balance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/recharge_number"
+                android:textColor="#999999"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/recharge_mem_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:text="@string/number_sample_1"
+                android:textColor="#222222"
+                android:textSize="@dimen/font_15" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dimen_7"
+            android:paddingEnd="@dimen/dimen_19"
+            android:paddingLeft="@dimen/dimen_19"
+            android:paddingRight="@dimen/dimen_19"
+            android:paddingStart="@dimen/dimen_19"
+            android:paddingTop="@dimen/dimen_12">
+
+            <TextView
+                android:id="@+id/recharge_donor_balance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/recharge_mem_balance"
+                android:textColor="#999999"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/recharge_donor_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:text="@string/number_sample_1"
+                android:textColor="#222222"
+                android:textSize="@dimen/font_15" />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dimen_7"
+            android:paddingEnd="@dimen/dimen_19"
+            android:paddingLeft="@dimen/dimen_19"
+            android:paddingRight="@dimen/dimen_19"
+            android:paddingStart="@dimen/dimen_19"
+            android:paddingTop="@dimen/dimen_12">
+
+            <TextView
+                android:id="@+id/recharge_vip_level1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/recharge_donor_balance"
+                android:textColor="#999999"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/recharge_vip_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:maxLines="1"
+                android:text="@string/number_sample_1"
+                android:textColor="#222222"
+                android:textSize="@dimen/font_15" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/recharge_container1"
+        android:layout_marginTop="@dimen/dimen_16"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingEnd="@dimen/dimen_19"
+            android:paddingLeft="@dimen/dimen_19"
+            android:paddingRight="@dimen/dimen_19"
+            android:paddingStart="@dimen/dimen_19">
+
+            <TextView
+                android:id="@+id/recharge_sum2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/dimen_7"
+                android:text="@string/recharge_sum"
+                android:textColor="#999999"
+                android:textSize="@dimen/font_15" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/recharge_sum2"
+                android:gravity="end|center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/recharge_sum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/unit_three"
+                    android:textColor="#222222"
+                    android:textSize="@dimen/font_27" />
+
+                <EditText
+                    android:id="@+id/recharge_sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:background="@null"
+                    android:hint="@string/recharge_sum_tip"
+                    android:maxLines="1"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/font_15" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1"
+            android:layout_marginEnd="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="@dimen/dimen_8"
+            android:paddingEnd="@dimen/dimen_19"
+            android:paddingLeft="@dimen/dimen_19"
+            android:paddingRight="@dimen/dimen_19"
+            android:paddingStart="@dimen/dimen_19"
+            android:paddingTop="@dimen/dimen_12">
+
+            <TextView
+                android:id="@+id/recharge_donor_sum1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recharge_donor_sum"
+                android:textColor="#666666"
+                android:textSize="@dimen/font_15" />
+
+            <TextView
+                android:id="@+id/recharge_donor_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:text="@string/number_sample_1"
+                android:textColor="#222222"
+                android:textSize="@dimen/font_15" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen_19"
+            android:layout_marginLeft="@dimen/dimen_19"
+            android:layout_marginRight="@dimen/dimen_19"
+            android:layout_marginStart="@dimen/dimen_19"
+            android:layout_marginTop="@dimen/dimen_16">
+
+            <TextView
+                android:id="@+id/recharge_discounts1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/recharge_discounts"
+                android:textColor="#333333"
+                android:textSize="@dimen/font_15" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recharge_discounts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recharge_discounts1"
+                android:layout_marginTop="@dimen/dimen_8" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

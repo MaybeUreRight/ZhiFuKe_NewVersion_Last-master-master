@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_19">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_15"
+            android:text="@string/update_tip"
+            android:textColor="#333333"
+            android:textSize="@dimen/font_18" />
+
+        <ImageView
+            android:id="@+id/dialog_update_close"
+            android:layout_width="@dimen/dimen_17"
+            android:layout_height="@dimen/dimen_17"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen_13"
+            android:layout_marginRight="@dimen/dimen_13"
+            android:scaleType="fitXY"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="@dimen/dimen_226"
+        android:layout_height="@dimen/dimen_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/dialog_update_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/dimen_110"
+        android:text="@string/personal_center_deviceinfo"
+        android:textColor="#323232"
+        android:textSize="@dimen/font_18" />
+
+    <Button
+        android:id="@+id/dialog_update_confirm"
+        android:layout_width="@dimen/dimen_184"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_update_confirm"
+        android:text="@string/confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_15" />
+</android.support.v7.widget.LinearLayoutCompat>

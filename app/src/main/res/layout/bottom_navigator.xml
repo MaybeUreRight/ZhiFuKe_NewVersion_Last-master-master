@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_54"
+              android:background="@color/white"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/navigator_index"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/navigator_index_iv"
+            android:layout_width="@dimen/dimen_26"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/index_selected"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="@string/index"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigator_message"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/navigator_message_iv"
+            android:layout_width="@dimen/dimen_26"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/message_unselected"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="@string/message"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/navigator_mine"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/navigator_mine_iv"
+            android:layout_width="@dimen/dimen_26"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:scaleType="fitXY"
+            android:src="@drawable/mine_unselected"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:text="@string/mine"/>
+    </LinearLayout>
+
+</LinearLayout>

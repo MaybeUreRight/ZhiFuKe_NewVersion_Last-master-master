@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/item_personalcenter_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/dimen_13"
+        android:layout_marginLeft="@dimen/dimen_22"
+        android:layout_marginStart="@dimen/dimen_22"
+        android:layout_marginTop="@dimen/dimen_13"
+        android:scaleType="center"
+        android:src="@drawable/personalcenter_deviceinfo" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_personalcenter_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_9"
+        android:layout_marginStart="@dimen/dimen_9"
+        android:layout_toEndOf="@id/item_personalcenter_iv"
+        android:layout_toRightOf="@id/item_personalcenter_iv"
+        android:text="@string/personal_center_deviceinfo"
+        android:textColor="#222222"
+        android:textSize="@dimen/font_15" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/item_personalcenter_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/dimen_19"
+        android:layout_marginEnd="@dimen/dimen_22"
+        android:layout_marginRight="@dimen/dimen_22"
+        android:layout_marginTop="@dimen/dimen_19"
+        android:text="@string/number_sample_1"
+        android:textColor="#222222"
+        android:textSize="@dimen/font_15" />
+
+</RelativeLayout>

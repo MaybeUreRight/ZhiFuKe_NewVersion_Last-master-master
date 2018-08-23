@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="@dimen/dimen_10"
+    android:paddingStart="@dimen/dimen_10">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_11"
+        >
+
+        <TextView
+            android:id="@+id/mrs_content_good_tv"
+            style="@style/mrs_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/mrs_content_good"/>
+
+        <TextView
+            android:id="@+id/mrs_content_good"
+            style="@style/mrs_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:text="@string/mrs_content_good"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_11"
+        >
+
+        <TextView
+            android:id="@+id/mrs_content_merchant_tv"
+            style="@style/mrs_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/mrs_content_merchant"/>
+
+        <TextView
+            android:id="@+id/mrs_content_merchant"
+            style="@style/mrs_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:text="@string/mrs_content_merchant"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_11"
+        >
+
+        <TextView
+            android:id="@+id/mrs_content_state_tv"
+            style="@style/mrs_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/mrs_content_state"/>
+
+        <TextView
+            android:id="@+id/mrs_content_state"
+            style="@style/mrs_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:text="@string/mrs_content_state"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_11"
+        >
+
+        <TextView
+            android:id="@+id/mrs_content_deal_time_tv"
+            style="@style/mrs_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/mrs_content_deal_time"/>
+
+        <TextView
+            android:id="@+id/mrs_content_deal_time"
+            style="@style/mrs_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:text="@string/mrs_content_deal_time"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_11"
+        >
+
+        <TextView
+            android:id="@+id/mrs_content_way_of_pay_tv"
+            style="@style/mrs_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/mrs_content_way_of_pay"
+            style="@style/mrs_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:text="@string/mrs_content_way_of_pay"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_11"
+        >
+
+        <TextView
+            android:id="@+id/mrs_content_number_of_deal_tv"
+            style="@style/mrs_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/mrs_content_number_of_deal"
+            style="@style/mrs_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:text="@string/mrs_content_number_of_deal"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_13"
+        android:layout_marginTop="@dimen/dimen_11"
+        >
+
+        <TextView
+            android:id="@+id/mrs_content_number_of_merchant_tv"
+            style="@style/mrs_content_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:text="@string/app_name"/>
+
+        <TextView
+            android:id="@+id/mrs_content_number_of_merchant"
+            style="@style/mrs_content_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:maxLines="1"
+            android:text="@string/mrs_content_number_of_merchant"/>
+    </RelativeLayout>
+</LinearLayout>

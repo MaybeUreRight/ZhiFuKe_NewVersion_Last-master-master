@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/qrcode_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_10">
+
+        <ImageView
+            android:id="@+id/pay_show_qr"
+            android:layout_width="@dimen/dimen_220"
+            android:layout_height="@dimen/dimen_220"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_line_shane"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/pay_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:gravity="center"
+            android:text="请扫描二维码进行付款"
+            android:textColor="#333333"
+            android:textSize="@dimen/font_13"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_zxing"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="gone">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <com.weilay.pos2.zxing.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</LinearLayout>

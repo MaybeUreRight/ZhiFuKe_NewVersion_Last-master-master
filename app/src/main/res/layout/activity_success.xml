@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SuccessActivity">
+
+    <include
+        android:id="@+id/success_titlecontaienr"
+        layout="@layout/title"/>
+
+    <RelativeLayout
+        android:id="@+id/pay_success_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/success_titlecontaienr"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginStart="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/pay_success_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:text="@string/pay_success"
+            android:textSize="@dimen/font_21"
+            />
+
+        <ImageView
+            android:id="@+id/pay_success_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_success_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:src="@drawable/done"/>
+
+        <TextView
+            android:id="@+id/pay_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_success_iv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:text="@string/number_sample_1"
+            android:textSize="@dimen/font_21"
+            />
+
+        <TextView
+            android:id="@+id/pay_success_brew_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pay_amount"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_30"
+            android:layout_marginTop="@dimen/dimen_40"
+            android:text="@string/brew_detail"
+            android:textColor="@color/red"
+            android:textSize="@dimen/font_16"
+            />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/pay_success_done"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_success_container"
+        android:layout_marginEnd="@dimen/dimen_65"
+        android:layout_marginStart="@dimen/dimen_65"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:background="@drawable/login_button_backgroud"
+        android:gravity="center"
+        android:text="@string/pay_done"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_21"/>
+
+
+</RelativeLayout>

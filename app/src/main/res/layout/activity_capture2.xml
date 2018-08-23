@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/black"-->
+    <!--android:padding="5dp"-->
+    <!--android:visibility="gone">-->
+
+    <!--<com.weilay.pos2.view.RotateTextView-->
+    <!--android:id="@+id/pay_danwei"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_toRightOf="@+id/pay_amount"-->
+    <!--android:text="￥ "-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="50dp"/>-->
+
+    <!--<com.weilay.pos2.view.RotateTextView-->
+    <!--android:id="@+id/pay_amount"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text=""-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="50dp"/>-->
+
+    <!--<com.weilay.pos2.view.RotateTextView-->
+    <!--android:id="@+id/pay_paidAmount"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/pay_amount"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text=""-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="50dp"/>-->
+    <!--</RelativeLayout>-->
+
+
+    <com.weilay.pos2.view.HorizontalListView
+        android:id="@+id/choose_pay_hlv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/dimen_5"
+        android:layout_marginStart="@dimen/dimen_5"
+        android:layout_weight="3">
+    </com.weilay.pos2.view.HorizontalListView>
+
+    <FrameLayout
+        android:id="@+id/pay_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+
+        <include
+            android:id="@+id/other_payment"
+            layout="@layout/fragment_pay"/>
+
+        <include
+            android:id="@+id/cash_payment"
+            layout="@layout/fragment_cash"/>
+
+        <include
+            android:id="@+id/premission_ll"
+            layout="@layout/fragment_permission"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_50"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dimen_12"
+        android:paddingStart="@dimen/dimen_12"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/psa_scan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/dimen_12"
+            app:cardElevation="@dimen/dimen_5"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <TextView
+                android:id="@+id/psa_scan_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/payselect_scan"/>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/psa_qrcode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/dimen_9"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/red"
+            app:cardCornerRadius="@dimen/dimen_12"
+            app:cardElevation="@dimen/dimen_5"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <TextView
+                android:id="@+id/psa_qrcode_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/payselect_qrcode"
+                android:textColor="@color/white"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

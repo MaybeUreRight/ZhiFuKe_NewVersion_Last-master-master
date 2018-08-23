@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/stb_titlecontainer"
+        layout="@layout/title"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/rl_1_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/stb_titlecontainer"
+        app:cardCornerRadius="@dimen/dimen_10"
+        app:cardElevation="@dimen/dimen_10"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginEnd="@dimen/dimen_15"
+            android:layout_marginStart="@dimen/dimen_15"
+            android:background="@drawable/round_white"
+            android:paddingBottom="@dimen/dimen_10"
+            android:paddingTop="@dimen/dimen_10"
+            app:layout_heightPercent="30%">
+
+            <ImageView
+                android:id="@+id/merchantlogo_iv"
+                android:layout_width="@dimen/dimen_48"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_9"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_10"
+                android:layout_toEndOf="@id/merchantlogo_iv"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/merchantname_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black3"
+                    android:textSize="@dimen/font_19"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16">
+
+
+                    <TextView
+                        android:id="@+id/sendticket_stock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:textColor="@color/black3"
+                        android:textSize="@dimen/font_14"/>
+
+                    <TextView
+                        android:id="@+id/sendticket_deadline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="@dimen/dimen_11"
+                        android:text="@string/app_name"
+                        android:textColor="@color/red3"
+                        android:textSize="@dimen/font_12"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/ticket_qrcode_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_1_container"
+        app:cardCornerRadius="@dimen/dimen_10"
+        app:cardElevation="@dimen/dimen_10"
+        app:cardUseCompatPadding="true">
+
+        <com.weilay.pos2.percent.PercentRelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/ticket_qrcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_heightPercent="70%"/>
+        </com.weilay.pos2.percent.PercentRelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/sendticket_finish"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_below="@id/ticket_qrcode_container"
+        android:layout_marginEnd="@dimen/dimen_65"
+        android:layout_marginStart="@dimen/dimen_65"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:background="@drawable/button_red_backgroud"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_18"/>
+
+
+</RelativeLayout>

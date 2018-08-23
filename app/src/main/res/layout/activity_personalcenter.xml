@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/personalcenter_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="@dimen/dimen_17" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/personalcenter_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_65"
+        android:layout_marginRight="@dimen/dimen_65"
+        android:layout_marginTop="79dp"
+        android:background="@drawable/personalcenter_logout"
+        android:gravity="center"
+        android:text="@string/logout"
+        android:textColor="@color/personalcenter_logout"
+        android:textSize="@dimen/font_15" />
+
+</android.support.v7.widget.LinearLayoutCompat>

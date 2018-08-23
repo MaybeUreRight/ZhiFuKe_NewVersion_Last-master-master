@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/rpl_titlecontainer"
+        layout="@layout/title"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rpl_titlecontainer"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/prl_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/dimen_13"
+            android:layout_marginStart="@dimen/dimen_12"
+            android:layout_marginTop="@dimen/dimen_22"
+            android:background="#f2f2f2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_1"
+                android:layout_margin="5dp">
+
+                <TextView
+                    android:id="@+id/pay_amountShow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="金额"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/font_18"/>
+
+                <TextView
+                    android:id="@+id/paidAmount_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/pay_unit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_18"/>
+
+                <TextView
+                    android:id="@+id/pay_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_toLeftOf="@+id/pay_amount"
+                    android:text="￥"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/font_18"/>
+
+                <TextView
+                    android:id="@+id/pay_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="10dp"
+                    android:inputType="numberDecimal"
+                    android:text=""
+                    android:textColor="#333333"
+                    android:textSize="@dimen/font_18"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/keyboard_ll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:layout_below="@+id/prl_info"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ipl_keyboard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="@dimen/dimen_13"
+                android:paddingLeft="@dimen/dimen_12"
+                android:paddingRight="@dimen/dimen_13"
+                android:paddingStart="@dimen/dimen_12"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

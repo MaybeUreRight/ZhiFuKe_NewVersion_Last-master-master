@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_183"
+        app:wlv_borderColor="@color/colorAccent"
+        app:wlv_borderWidth="3dp"
+        app:wlv_progressValue="20"
+        app:wlv_round_rectangle="true"
+        app:wlv_shapeType="rectangle"
+        app:wlv_titleCenterColor="@android:color/white"
+        app:wlv_titleCenterSize="24sp"
+        app:wlv_titleCenterStrokeColor="@android:color/holo_blue_dark"
+        app:wlv_titleCenterStrokeWidth="3dp"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="50"
+        app:wlv_waveColor="@color/wave_color"
+        app:wlv_wave_background_Color="@color/wave_bg_color"/>
+
+    <RelativeLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_203"
+        android:background="@android:color/transparent">
+
+        <include layout="@layout/index_statistics"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_41"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="@dimen/dimen_36"
+            android:layout_marginLeft="@dimen/dimen_36"
+            android:layout_marginRight="@dimen/dimen_36"
+            android:layout_marginStart="@dimen/dimen_36"
+            app:cardCornerRadius="@dimen/dimen_12"
+            app:cardElevation="@dimen/dimen_5">
+
+            <Button
+                android:id="@+id/index_pay"
+                style="@style/index_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/index_pay"
+                android:text="@string/index_pay"/>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_container"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_14"
+        android:paddingLeft="@dimen/dimen_13"
+        android:paddingRight="@dimen/dimen_13"
+        android:paddingTop="@dimen/dimen_14">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/index_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/index_recyclerview_banner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

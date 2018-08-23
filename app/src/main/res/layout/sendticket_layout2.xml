@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/gray_bg">
+
+    <include
+        android:id="@+id/st_titlecontainer"
+        layout="@layout/title"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/st_titlecontainer"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_39"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/normal_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="普通券"
+                android:textColor="@color/index_pay"
+                android:textSize="@dimen/font_19"/>
+
+            <View
+                android:id="@+id/normal_view"
+                android:layout_width="@dimen/dimen_105"
+                android:layout_height="@dimen/dimen_2"
+                android:layout_below="@+id/normal_coupon"
+                android:layout_centerHorizontal="true"
+                android:background="@color/red"
+                android:visibility="visible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_39"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/friend_coupon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="朋友券"
+                android:textColor="@color/index_pay"
+                android:textSize="@dimen/font_19"/>
+
+            <View
+                android:id="@+id/friend_view"
+                android:layout_width="@dimen/dimen_105"
+                android:layout_height="@dimen/dimen_2"
+                android:layout_below="@+id/friend_coupon"
+                android:layout_centerHorizontal="true"
+                android:background="@color/red"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/coupon_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_title">
+    </FrameLayout>
+
+</RelativeLayout>

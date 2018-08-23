@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".activity.ExchangeActivity">
+
+    <include
+        android:id="@+id/exchange_titlecontainer"
+        layout="@layout/title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/exchange_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exchange_titlecontainer"
+        android:paddingEnd="@dimen/dimen_13"
+        android:paddingLeft="@dimen/dimen_13"
+        android:paddingRight="@dimen/dimen_13"
+        android:paddingStart="@dimen/dimen_13" />
+
+    <LinearLayout
+        android:id="@+id/exchange_sumcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exchange_recyclerview"
+        android:layout_marginTop="@dimen/dimen_35"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exchange_sum"
+            android:textColor="#333333"
+            android:textSize="@dimen/font_21" />
+
+
+        <TextView
+            android:id="@+id/exchange_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:text="@string/number_sample_1"
+            android:textColor="#333333"
+            android:textSize="@dimen/font_21" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/unit_two"
+            android:textColor="#333333"
+            android:textSize="@dimen/font_21" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exchange_sumcontainer"
+        android:layout_marginTop="@dimen/dimen_32"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/dimen_18"
+        android:paddingLeft="@dimen/dimen_18"
+        android:paddingRight="@dimen/dimen_18"
+        android:paddingStart="@dimen/dimen_18">
+
+        <Button
+            android:id="@+id/exchange_now"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/exchange_now"
+            android:text="@string/exchange_now"
+            android:textColor="#333333"
+            android:textSize="@dimen/font_18" />
+
+        <Button
+            android:id="@+id/exchange_later"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginStart="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:background="@drawable/exchange_later"
+            android:text="@string/exchange_later"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+
+</RelativeLayout>

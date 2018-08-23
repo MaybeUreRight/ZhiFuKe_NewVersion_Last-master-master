@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.OrderListActivity">
+
+    <include
+        android:id="@+id/ol_titlecontainer"
+        layout="@layout/title"/>
+
+    <TextView
+        android:id="@+id/ol_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/ol_titlecontainer"
+        android:layout_marginEnd="@dimen/dimen_10"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:background="@drawable/order_list_backgroud"
+        android:padding="@dimen/dimen_10"
+        android:text="@string/sample_date"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/ol_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ol_date"
+        android:layout_marginTop="@dimen/dimen_10"/>
+
+</RelativeLayout>
